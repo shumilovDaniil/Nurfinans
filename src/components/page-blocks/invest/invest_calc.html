@@ -1,0 +1,52 @@
+<section class="calc">
+  <div class="container">
+    <div class="calc__tabs">
+      <a class="calc__tab" href="#">
+        <img src="./img/icons/calc-1.png" alt="Investment">Инвестиционные<br> вклады НурФинанс</a>
+      <a class="calc__tab" href="#">
+        <img src="./img/icons/calc-2.png" alt="Installment plan">Потребительская<br> рассрочка НурФинанс</a>
+    </div>
+    <div class="calc__inner">
+      <div class="calc__options">
+        <h2>Рассчитай свои накопления и доход</h2>
+
+        <div class="calc__options-item">
+          <label for="deposit" min="0" max="1000000">Сумма вклада</label>
+          <span>1 000 000 ₽</span>
+          <input name="deposit" type="range">
+        </div>
+  
+        <div class="calc__options-item">
+          <label for="investment">Срок инвестирования</label>
+          <span>24 месяца</span>
+          <input name="investment" type="range" min="0" max="24">
+        </div>
+  
+        <label for="switch">Порядок выплаты дохода</label>
+        <div class="calc__btns">
+          <button name="switch">Ежемесячно</button>
+          <button name="switch">В конце срока</button>
+        </div>
+  
+        <div class="calc__options-item">
+          <label for="investment">Пополнение вклада</label>
+          <span>30 000 ₽ /в месяц</span>
+          <input name="investment" type="range" min="0" max="24">
+        </div>
+      </div>
+      <div class="calc__graph">
+        <img src="./img/content/graph-1.png" alt="Graph">
+      </div>
+      <div class="calc__total">
+        <div class="calc__total-inner">
+          <ul class="calc__total-list">
+            <li><span>12,5%</span>Доходность</li>
+            <li><span>282 366 ₽</span>Сумма доходности</li>
+            <li><span>1 282 366 ₽</span>Итоговая сумма</li>
+          </ul>
+          <a class="calc__btn btn" href="#">Инвестировать</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

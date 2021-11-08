@@ -1,0 +1,52 @@
+@import "_vars.scss";
+
+body {
+  font-family: $primary-font;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+}
+
+.container {
+  max-width: 1285px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 1.08823;
+}
+
+.btn {
+  display: inline-block;
+
+  padding: 14px 30px;
+  border: 0px solid transparent;
+  border-radius: 20px 0px;
+
+  color: $white;
+  background: $primary-800;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background .6s ease, color .6s ease;
+
+  &:hover {
+    background: $primary-900;
+  }
+
+  &--white {
+    background: $white;
+    color: $primary-800;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}

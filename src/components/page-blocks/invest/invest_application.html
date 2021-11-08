@@ -1,0 +1,60 @@
+<section class="application">
+  <div class="container">
+    <h2 class="title">Онлайн-заявка вкладчика</h2>
+    <form class="application__form">
+      <div class="application__wrapper">
+        <strong>Контактные данные</strong>
+        <div class="application__item">
+          <label for="name">Фамилия, Имя и Отчество</label>
+          <input id="name" type="text" placeholder="Иванов Алексей Петрович">
+        </div>
+        <div class="application__item">
+          <label for="email">Электронная почта</label>
+          <input id="email" type="email" placeholder="Name@mail.com">
+        </div>
+        <div class="application__item">
+          <label for="rf">Гражданство</label>
+          <input id="rf" type="text" placeholder="Имею гражданство РФ">
+        </div>
+      </div>
+      <div class="application__wrapper">
+        <div class="application__item">
+          <label for="tel">Мобильный телефон</label>
+          <input id="tel" type="tel" placeholder="+7">
+        </div>
+        <div class="application__item">
+          <label for="data">Дата рождения</label>
+          <input id="data" type="data" placeholder="26.01.1984">
+        </div>
+        <div class="application__item">
+          <label for="city">Город проживания</label>
+          <input id="city" type="text" placeholder="Казань">
+        </div>
+      </div>
+      <div class="application__wrapper">
+        <strong>Параметры вклада</strong>
+        <div class="application__item">
+          <label for="sum">Сумма вклада</label>
+          <span>1 000 000 ₽</span>
+          <input id="sum" type="range">
+        </div>
+        <div class="application__item">
+          <label for="invest">Срок инвестирования</label>
+          <span>24 месяца</span>
+          <input id="invest" type="range">
+        </div>
+        <div class="application__item">
+          <label for="refill">Пополнение вклада</label>
+          <span>10 000 ₽ /в месяц</span>
+          <input id="refill" type="range">
+        </div>
+      </div>
+      <div class="application__btns">
+        <button class="btn application__btn">Оформить заявку</button>
+        <p>Заполняя форму, я принимаю<br>
+          <a href="#">условия передачи информации</a>
+        </p>
+      </div>
+    </form>
+  </div>
+</section>

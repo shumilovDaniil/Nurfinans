@@ -1,0 +1,154 @@
+.footer {
+  background: $primary-90;
+  flex: 0 0 auto;
+
+  &__inner {
+    padding: 87px 0 16px;
+  }
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 62px;
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 30%;
+
+    font-style: normal;
+  }
+
+  &__logo {
+    margin-bottom: 76px;
+  }
+
+  &__tel {
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 1.2;
+    color: $primary-800;
+
+    span {
+      display: block;
+      font-size: 12px;
+      color: $primary-500;
+      margin-bottom: 45px;
+      font-weight: 400;
+    }
+  }
+
+  &__address {
+    font-size: 18px;
+    line-height: 1.4;
+    color: $primary-800;
+
+    span {
+      display: block;
+      font-size: 12px;
+      color: $primary-500;
+    }
+  }
+
+  &__search {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 70%;
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    margin-bottom: 65px;
+    font-size: 14px;
+    color: $primary-500;
+    padding: 15px 57px;
+    border: none;
+    background: $white;
+    border-radius: 6px;
+
+    &::placeholder {
+      color: $primary-500;
+    }
+
+    &-wrapper {
+      position: relative;
+      width: 100%;
+
+      &::before {
+        position: absolute;
+        content: '';
+        background-image: url(../../img/icons/search.svg);
+        height: 24px;
+        width: 24px;
+        left: 0;
+        top: 10%;
+        z-index: 100;
+        transform: translate(70%, 5%);
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 20%;
+
+    &-title {
+      margin-bottom: 34px;
+
+      a {
+        font-size: 20px;
+        color: $primary-800;
+      }
+    }
+
+    &-item {
+      width: 100%;
+      font-size: 14px;
+
+      & + .footer__list-item {
+        margin-bottom: 20px;
+      }
+
+      a {
+        transition: color .4s ease;
+        &:hover {
+            color: $primary-900;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    font-size: 12px;
+    color: $primary-500;
+    line-height: 1.2;
+
+    h5 {
+      font-weight: 700;
+      margin-bottom: 11px;
+      font-size: 12px;
+    }
+
+    &-text {
+      margin-bottom: 60px;
+    }
+
+    &-info {
+      p {
+        display: inline-block;
+        margin-right: 35px;
+      }
+    }
+  }
+}

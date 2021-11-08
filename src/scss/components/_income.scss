@@ -1,0 +1,60 @@
+.income {
+  padding-bottom: 109px;
+
+  h2 {
+    margin-bottom: 19px;
+  }
+
+  &-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 56px;
+  }
+
+  &__text {
+    flex: 0 0 46%;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.4;
+    color: $primary-500;
+  }
+
+  &__pros {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    flex: 0 0 50%;
+    padding-left: 80px;
+
+    li {
+      position: relative;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 1.41176;
+      padding-left: 33px;
+
+      &::after {
+        position: absolute;
+        content: '';
+        border-radius: 50%;
+        background: $white;
+        border: 6px solid $primary-800;
+        height: 21px;
+        width: 21px;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      & + li {
+        margin-left: 32px;  
+      }
+    }
+  }
+
+  &__graph {
+    display: flex;
+    justify-content: center;
+  }
+}

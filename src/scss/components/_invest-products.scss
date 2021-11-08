@@ -1,0 +1,108 @@
+.invest-products {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $primary-500;
+  padding-bottom: 108px;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 156px;
+  }
+
+  &__left {
+    flex: 0 0 45%;
+    padding-right: 110px;
+
+    h2 {
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 1.09090;
+      margin-bottom: 36px;
+      color: $black;
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 1.4;
+    }
+  }
+
+  &__right {
+    flex: 0 0 55%;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+    flex: 0 0 32%;
+    border-radius: 6px;
+    background: $primary-90;
+    padding: 236px 15px 39px 40px;
+
+    img {
+      position: absolute;
+      width: 100%;
+      margin: 0 auto;
+      top: -50%;
+      left: 0;
+      transform: translateY(60%);
+    }
+
+    strong {
+      display: inline-block;
+      margin-bottom: 10px;
+      font-size: 14px;
+      line-height: 1.07142;
+      color: $primary-500;
+    }
+
+    h4 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.08333;
+      color: $black;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      color: $black;
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 25px;
+
+      li {
+        flex: 0 0 45%;
+      }
+
+      span {
+        display: block;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11111;
+        color: $primary-700;
+      }
+    }
+
+    p {
+      margin-bottom: 27px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.375;
+      color: $primary-500;
+    }
+  }
+
+  &__btns {
+    
+    a + a {
+      margin-left: 17px;
+    }
+  }
+}

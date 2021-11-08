@@ -1,0 +1,87 @@
+.application {
+  padding-bottom: 103px;
+
+  h2 {
+    padding-bottom: 49px;
+  }
+
+  strong {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 1.09090;
+    color: $primary-800;
+    padding-bottom: 19px;
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  &__wrapper {
+    flex: 0 0 33.3333%;
+
+    label {
+      flex: 0 0 100%;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 1.5;
+      color: $primary-500;
+    }
+
+    input {
+      flex: 0 0 100%;
+      border: 0;
+      outline: none;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    &:nth-child(2) {
+      padding-top: 42px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+
+    background: $white;
+    border: 1px solid $primary-100;
+    border-radius: 10px;
+    padding: 11px 17px 8px;
+    margin-bottom: 30px;
+  }
+
+  &__btns {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 0 0 100%;
+
+    p {
+      font-size: 12px;
+      line-height: 1.5;
+      color: $primary-400;
+    }
+
+    a {
+      border-bottom: 1px solid $primary-400;
+      transition: color .3s ease, border-bottom .3s ease;
+
+      &:hover {
+        color: $primary-700;
+        border-bottom: 1px solid $primary-700;
+      }
+    }
+  }
+
+  &__btn.btn {
+    padding: 23px 42px;
+    cursor: pointer;
+    margin-right: 30px;
+  }
+}

@@ -1,0 +1,10 @@
+.video {
+  padding-bottom: 102px;
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+}
