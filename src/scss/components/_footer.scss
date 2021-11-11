@@ -19,8 +19,6 @@
     display: flex;
     flex-wrap: wrap;
     flex: 0 0 30%;
-
-    font-style: normal;
   }
 
   &__logo {
@@ -46,11 +44,27 @@
     font-size: 18px;
     line-height: 1.4;
     color: $primary-800;
+    margin-bottom: 46px;
 
     span {
       display: block;
       font-size: 12px;
       color: $primary-500;
+    }
+  }
+
+  &__social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &-item {
+      background: $white;
+      padding: 10px;
+
+      & + .footer__social-item {
+        margin-left: 10px;
+      }
     }
   }
 

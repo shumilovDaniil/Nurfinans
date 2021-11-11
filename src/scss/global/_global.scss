@@ -1,4 +1,4 @@
-@import "_vars.scss";
+@import '_vars.scss';
 
 body {
   font-family: $primary-font;
@@ -35,7 +35,7 @@ body {
   background: $primary-800;
   font-weight: 500;
   font-size: 14px;
-  transition: background .6s ease, color .6s ease;
+  transition: background 0.6s ease, color 0.6s ease;
 
   &:hover {
     background: $primary-900;
@@ -48,5 +48,66 @@ body {
     &:hover {
       color: $white;
     }
+  }
+}
+
+.input--range {
+  flex: 0 0 100%;
+
+  &[type='range'] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-ms-track {
+      width: 100%;
+      cursor: pointer;
+      background: transparent;
+      border-color: transparent;
+      color: transparent;
+    }
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 30px;
+    width: 30px;
+    background: $white;
+    border-radius: 50%;
+    border: 12px solid $primary-800;
+    cursor: pointer;
+    margin-top: -14px;
+  }
+
+  &::-moz-range-thumb {
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+
+  &::-ms-thumb {
+    height: 36px;
+    width: 16px;
+    border-radius: 3px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+
+  &::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 6px;
+    cursor: pointer;
+    background: $primary-300;
+    border-radius: 8px;
   }
 }

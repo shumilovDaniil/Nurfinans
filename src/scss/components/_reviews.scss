@@ -34,10 +34,6 @@
       margin-left: 15px;
     }
 
-    img {
-      margin-bottom: 22px;
-    }
-
     strong {
       display: inline-block;
       font-size: 18px;
@@ -53,8 +49,23 @@
     }
   }
 
-  &__btn.btn {
-    
+  &__video {
+    position: relative;
+    display: inline-block; 
+    margin-bottom: 22px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      background: url(../../img/content/review_play.png);
+      background-repeat: no-repeat;
+      background-position: center center;
+      width: 113px;
+      height: 186px;
+      right: 0;
+      top: 0;
+      transform: translate(-26px, 17px);
+    }
   }
 
   &__arrow {

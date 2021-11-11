@@ -35,36 +35,38 @@
             <nav class="header-top">
                 <p class="header-top__pretitle">Инвестиционно-финансовая компания</p>
                 <a class="header-top__city" href="#">Город Казань<a>
-                <ul class="header-top__list">
-                    <li class="header-top__item">
-                        <a href="#">О компании</a>
-                    </li>
-                    <li class="header-top__item">
-                        <a href="#">Отзывы</a>
-                    </li>
-                    <li class="header-top__item">
-                        <a href="#">Халяль подробно</a>
-                    </li>
-                    <li class="header-top__item">
-                        <a href="#">Отчетность</a>
-                    </li>
-                    <li class="header-top__item">
-                        <a href="#">Наши партнеры</a>
-                    </li>
-                    <li class="header-top__item">
-                        <a href="#">Сотрудничество</a>
-                    </li>
-                    <li class="header-top__item header-top__contact">
-                        <a href="#">Контакты</a>
-                    </li>
-                </ul>
-                <a class="header-top__lang" href="#">Ru</a>
+                        <ul class="header-top__list">
+                            <li class="header-top__item">
+                                <a href="#">О компании</a>
+                            </li>
+                            <li class="header-top__item">
+                                <a href="#">Отзывы</a>
+                            </li>
+                            <li class="header-top__item">
+                                <a href="#">Халяль подробно</a>
+                            </li>
+                            <li class="header-top__item">
+                                <a href="#">Отчетность</a>
+                            </li>
+                            <li class="header-top__item">
+                                <a href="#">Наши партнеры</a>
+                            </li>
+                            <li class="header-top__item">
+                                <a href="#">Сотрудничество</a>
+                            </li>
+                            <li class="header-top__item header-top__contact">
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                        <a class="header-top__lang" href="#">Ru</a>
             </nav>
             <nav class="header-bottom">
+                    <button class="header-bottom__burger"><img src="./img/icons/burger-menu.svg" alt="Burger icon"></button>
                 <strong>
                     <a href="./index.html">
                         <img class="header-logo" src="./img/icons/logo.svg" alt="Нурфинанс">
-                        <img class="header-logo-sm" src="./img/icons/logo-sm.svg" alt="Нурфинанс">
+                        <img class="header-logo-md" src="./img/icons/logo-md.svg" alt="Нурфинанс">
+                        <img class="header-logo-sm" src="./img/icons/logo-sm.svg" width="32" height="32" alt="Нурфинанс">
                     </a>
                 </strong>
                 <ul class="header-bottom__list">
@@ -77,14 +79,14 @@
                     <li class="header-bottom__item">
                         <a href="#">Калькулятор</a>
                     </li>
-                </ul>
-                <ul class="header-bottom__links">
-                    <li>
+                    <li class="header-bottom__item">
                         <a class="header-bottom__tel" href="tel:88002700700">8 800 2700 700</a>
                     </li>
-                    <li>
+                    <li class="header-bottom__item">
                         <a class="header-bottom__search" href="#"></a>
                     </li>
+                </ul>
+                <ul class="header-bottom__links">
                     <li>
                         <a class="header-bottom__btn btn" href="#">Личный Кабинет</a>
                     </li>
@@ -163,25 +165,27 @@
         <div class="calc__options-item">
           <label for="deposit" min="0" max="1000000">Сумма вклада</label>
           <span>1 000 000 ₽</span>
-          <input name="deposit" type="range">
+          <input class="input--range" name="deposit" type="range">
         </div>
   
         <div class="calc__options-item">
           <label for="investment">Срок инвестирования</label>
           <span>24 месяца</span>
-          <input name="investment" type="range" min="0" max="24">
+          <input class="input--range" name="investment" type="range" min="0" max="24">
         </div>
   
-        <label for="switch">Порядок выплаты дохода</label>
-        <div class="calc__btns">
-          <button name="switch">Ежемесячно</button>
-          <button name="switch">В конце срока</button>
+        <div class="calc__options-item">
+          <label for="switch">Порядок выплаты дохода</label>
+          <div class="calc__btns">
+            <button class="calc__btn" name="switch">Ежемесячно</button>
+            <button class="calc__btn" name="switch">В конце срока</button>
+          </div>
         </div>
   
         <div class="calc__options-item">
           <label for="investment">Пополнение вклада</label>
           <span>30 000 ₽ /в месяц</span>
-          <input name="investment" type="range" min="0" max="24">
+          <input class="input--range" name="investment" type="range" min="0" max="24">
         </div>
       </div>
       <div class="calc__graph">
@@ -201,18 +205,18 @@
   </div>
 </section>
 		<section class="video">
-    <div class="container">
+    <div class="container video__container">
         <div class="video__inner">
             <div class="video__link">
                 <div class="video__link-img">
                     <img src="../../img/content/video-1.png" alt="Video picture">
                 </div>
-                <a class="btn" href="#">Видео о работе компании</a>
+                <a class="video__btn btn" href="#">Видео о работе компании</a>
             </div>
             <div class="video__content">
                 <h2>Разумные инвестиции</h2>
-                <p>Вкладывая свои деньги в ИФК «Нур Финанс», инвестор получает:</p>
-                <ul>
+                <p class="video__content-subtitle">Вкладывая свои деньги в ИФК «Нур Финанс», инвестор получает:</p>
+                <ul class="video__content-list">
                     <li>
                         <strong>Долю в имуществе и активах компании</strong>
                     </li>
@@ -319,7 +323,7 @@
     <img src="../img/content/giagram-1.png" alt="Diagram">
 </section>
 		<section class="application">
-  <div class="container">
+  <div class="container application__container">
     <h2 class="title">Онлайн-заявка вкладчика</h2>
     <form class="application__form">
       <div class="application__wrapper">
@@ -356,17 +360,17 @@
         <div class="application__item">
           <label for="sum">Сумма вклада</label>
           <span>1 000 000 ₽</span>
-          <input id="sum" type="range">
+          <input class="input--range" id="sum" type="range">
         </div>
         <div class="application__item">
           <label for="invest">Срок инвестирования</label>
           <span>24 месяца</span>
-          <input id="invest" type="range">
+          <input class="input--range" id="invest" type="range">
         </div>
         <div class="application__item">
           <label for="refill">Пополнение вклада</label>
           <span>10 000 ₽ /в месяц</span>
-          <input id="refill" type="range">
+          <input class="input--range" id="refill" type="range">
         </div>
       </div>
       <div class="application__btns">
@@ -394,19 +398,29 @@
                     <div class="footer__address">Казань, ул. Мавлютова, дом 31<span>Мы работаем с 08:00 до 20:00</span></div>
                     <ul class="footer__social">
                         <li class="footer__social-item">
-                            <a href="#"></a>
+                            <a href="#">
+                                <img src="../../img/icons/FacebookLogo.svg" alt="Facebook logo">
+                            </a>
                         </li>
                         <li class="footer__social-item">
-                            <a href="#"></a>
+                            <a href="#">
+                                <img src="../../img/icons/WhatsappLogo.svg" alt="Whatsapp logo">
+                            </a>
                         </li>
                         <li class="footer__social-item">
-                            <a href="#"></a>
+                            <a href="#">
+                                <img src="../../img/icons/TelegramLogo.svg" alt="Telegram logo">
+                            </a>
                         </li>
                         <li class="footer__social-item">
-                            <a href="#"></a>
+                            <a href="#">
+                                <img src="../../img/icons/YoutubeLogo.svg" alt="Youtube logo">
+                            </a>
                         </li>
                         <li class="footer__social-item">
-                            <a href="#"></a>
+                            <a href="#">
+                                <img src="../../img/icons/TwitterLogo.svg" alt="Twitter logo">
+                            </a>
                         </li>
                     </ul>
                 </address>

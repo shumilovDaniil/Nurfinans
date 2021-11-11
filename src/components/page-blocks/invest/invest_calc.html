@@ -13,25 +13,27 @@
         <div class="calc__options-item">
           <label for="deposit" min="0" max="1000000">Сумма вклада</label>
           <span>1 000 000 ₽</span>
-          <input name="deposit" type="range">
+          <input class="input--range" name="deposit" type="range">
         </div>
   
         <div class="calc__options-item">
           <label for="investment">Срок инвестирования</label>
           <span>24 месяца</span>
-          <input name="investment" type="range" min="0" max="24">
+          <input class="input--range" name="investment" type="range" min="0" max="24">
         </div>
   
-        <label for="switch">Порядок выплаты дохода</label>
-        <div class="calc__btns">
-          <button name="switch">Ежемесячно</button>
-          <button name="switch">В конце срока</button>
+        <div class="calc__options-item">
+          <label for="switch">Порядок выплаты дохода</label>
+          <div class="calc__btns">
+            <button class="calc__btn" name="switch">Ежемесячно</button>
+            <button class="calc__btn" name="switch">В конце срока</button>
+          </div>
         </div>
   
         <div class="calc__options-item">
           <label for="investment">Пополнение вклада</label>
           <span>30 000 ₽ /в месяц</span>
-          <input name="investment" type="range" min="0" max="24">
+          <input class="input--range" name="investment" type="range" min="0" max="24">
         </div>
       </div>
       <div class="calc__graph">
